@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Oh My Food</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,21 +20,22 @@
             <div class="loader__item loader__item--3"></div>
         </div>
     </div> 
-    <header>
-        <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+    <header class="header_landing_page">
+        <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
     </header>
-    <section class="lieu">
+    <main>
+        <section class="lieu">
         <i class="fas fa-map-marker-alt icone_lieu"></i>
         <h3 class="lieu_text">Paris, Belleville</h3>
-    </section>
-    <section class="intro">
-        <h2 class="intro_title">Réservez le menu qui 
+        </section>
+        <section class="intro">
+            <h2 class="intro_title">Réservez le menu qui 
            <BR>vous convient</BR> 
-        </h2>
-        <p class="intro_text">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-        <a class="intro_button" href="#">Explorer nos restaurants</a>
-    </section>
-    <section class="explication">
+            </h2>
+            <p class="intro_text">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <a class="intro_button" href="#">Explorer nos restaurants</a>
+        </section>
+        <section class="explication">
         <h2>Fonctionnement</h2>
         <div class="fonctionnement">
             <div class="explication_step">
@@ -53,12 +54,12 @@
                 <span>Dégustez au restaurant</span>
             </div>
         </div>
-    </section>
-    <section class="restaurants">
-        <h2 class="h2_restaurants">Restaurants</h2>
-        <div class="fiche_grid"> 
+        </section>
+        <section class="restaurants">
+            <h2 class="h2_restaurants">Restaurants</h2>
+            <div class="fiche_grid"> 
             <article class="fiche_restau"> 
-            <a href="#">
+            <a href="pages/menu_1.html">
                 <figure>
                     <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du goût" class="fiche_restau_image">
                     <span class="fiche_new">Nouveau</span>
@@ -135,8 +136,9 @@
                 </figure>
             </a>
             </article>
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
     <footer>
         <h3 class="footer_titre">ohmyfood</h3>
         <ul>
