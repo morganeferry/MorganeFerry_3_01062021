@@ -348,6 +348,7 @@ $breakpoint-tablet: 768px;
     .heart-section{
         position: relative;
         left: 30px;
+        top: 10px;
     }
 
     .fiche_grid{
@@ -393,15 +394,20 @@ $breakpoint-tablet: 768px;
 
 .section_plat{
     background-color: white;
-    width: 320px;
     border-radius: 15px;
     padding: 15px;
     display: flex;
     margin: 15px 0;
     box-shadow: 5px 5px 10px darken($color: #F6F6F6, $amount: 10);
+    animation: itemAppear .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
 
     &:hover .check_background{
-        width: 60px;
+        opacity: 100%;
+        width: 70px;
         -webkit-transition: 0.3s;
             transition: 0.3s;
         -webkit-transition-timing-function: ease-in;
@@ -409,11 +415,58 @@ $breakpoint-tablet: 768px;
     }
 
     &:hover .rotate_icon{
-        -webkit-animation: rotate_animation 0.3s linear;
         animation: rotate_animation 0.3s linear;
     }
-
 }
+
+.delay-0 {
+    animation-delay: 0s;
+}
+
+.delay-1 {
+    animation-delay: .1s;
+}
+
+.delay-2 {
+    animation-delay: .2s;
+}
+
+.delay-3 {
+    animation-delay: .3s;
+}
+
+.delay-4 {
+    animation-delay: .4s;
+}
+
+.delay-5 {
+    animation-delay: .5s;
+}
+
+.delay-6 {
+    animation-delay: .6s;
+}
+
+.delay-7 {
+    animation-delay: .7s;
+}
+
+.delay-8 {
+    animation-delay: .8s;
+}
+
+
+
+@keyframes itemAppear {
+    0% {
+      transform: scale(0)
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
 
 
 .header_menu{
@@ -430,7 +483,21 @@ h4{
 .h3_menu{
     margin: 0 0 20px;
     font-weight: 400;
+    position: relative;
+    padding-bottom: 8px;
+
+    &:after{
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: $color-tertiary;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
 }
+
+
 
 .p_menu{
     margin: 2px;
@@ -463,6 +530,11 @@ h4{
     grid-template-columns: repeat(3,1fr);
     column-gap: 1rem;
 }
+
+.section_plat{
+    width: 340px;
+}
+
 }
 
 .check_background{
@@ -474,6 +546,8 @@ h4{
     justify-content: center;
     height: 75px;
     border-radius: 0 17px 17px 0;
+    margin: -16px;
+    opacity: 0%;
 }
 
 
@@ -493,13 +567,4 @@ h4{
         -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
   }
-
-  @-webkit-keyframes rotate_animation {
-    0% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
   }
