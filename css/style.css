@@ -475,10 +475,11 @@ li {
 }
 
 .section_plat:hover .check_background {
-  opacity: 100;
   width: 60px;
-  -webkit-animation: slide-left 0.5s;
-          animation: slide-left 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
 
 .header_menu {
@@ -553,38 +554,5 @@ h4 {
 .fa-check-circle {
   color: white;
   font-size: x-large;
-}
-
-@-webkit-keyframes .check_background {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
-
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
 }
 /*# sourceMappingURL=style.css.map */
