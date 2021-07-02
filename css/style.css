@@ -385,17 +385,6 @@ li {
   .explication {
     padding: 20px 80px;
   }
-  .explication_step {
-    padding: 25px 170px 25px 25px;
-  }
-  .fonctionnement {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .restaurants {
     padding: 40px 80px;
   }
@@ -424,6 +413,33 @@ li {
   }
   footer {
     padding: 20px 80px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1124px) {
+  .fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1125px) {
+  .fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .explication_step {
+    padding: 20px 30px;
+    width: 100%;
+    margin: 10px 20px;
   }
 }
 
@@ -603,9 +619,35 @@ h4 {
   padding: 20px 40px 40px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section_plat {
+    width: auto;
+  }
+  footer {
+    padding: 20px 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .menu_responsive {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+  .section_plat {
+    width: 260px;
+  }
+  footer {
+    padding: 20px 20px;
+  }
+}
+
+@media (min-width: 1440px) {
   .menu {
-    margin: -64px 80px 0px;
+    margin: -64px 80px 0;
   }
   .menu_responsive {
     display: -ms-grid;

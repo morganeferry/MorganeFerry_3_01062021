@@ -319,15 +319,6 @@ $breakpoint-tablet: 768px;
         padding: 20px 80px;
     }
 
-    .explication_step{
-        padding: 25px 170px 25px 25px;
-    }
-
-    .fonctionnement{
-        display: flex;
-        justify-content: space-between;
-    }
-
     .restaurants{
         padding: 40px 80px;
     }
@@ -361,6 +352,28 @@ $breakpoint-tablet: 768px;
         padding: 20px 80px;
     }
 
+}
+
+
+$breakpoint-desktop: 1024px;
+@media (min-width: $breakpoint-desktop) and (max-width: 1124px) {
+.fonctionnement{
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+@media (min-width: 1125px){
+.fonctionnement{
+    display: flex;
+    justify-content: space-between;
+}
+
+.explication_step{
+    padding: 20px 30px;
+    width: 100%;
+    margin: 10px 20px;
+}
 }
 
 
@@ -519,23 +532,48 @@ h4{
 
 
 
-@media (min-width: $breakpoint-tablet) {
-
-.menu{
-    margin: -64px 80px 0px;
-}
-
-.menu_responsive{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 1rem;
-}
-
+@media (min-width: $breakpoint-tablet) and (max-width: 1023px) {
 .section_plat{
-    width: 340px;
+    width: auto;
+}
+footer{
+    padding: 20px 20px;
+}
 }
 
+@media (min-width: 1024px) and (max-width: 1439px){
+    .menu_responsive{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+    }
+
+    .section_plat{
+        width: 260px;
+    }
+
+    footer{
+    padding: 20px 20px;
+    }
 }
+
+@media (min-width: 1440px){
+.menu{
+    margin: -64px 80px 0;
+}
+
+    .menu_responsive{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+    }
+
+    .section_plat{
+        width: 340px;
+    }
+
+}
+
 
 .check_background{
     background-color: #99e2d0;
