@@ -391,17 +391,15 @@ li {
   .h2_restaurants {
     margin-bottom: 30px;
   }
+  .h2_menu {
+    margin: 30px 0 10px 0;
+  }
   .fiche_restau {
     margin-bottom: 40px;
   }
   .fiche_new {
     margin-left: -85px;
     right: auto;
-  }
-  .heart-section {
-    position: relative;
-    left: 30px;
-    top: 10px;
   }
   .fiche_grid {
     -ms-grid-columns: (1fr)[2];
@@ -413,6 +411,12 @@ li {
   }
   footer {
     padding: 20px 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h2_menu {
+    margin: 30px 0 10px 0;
   }
 }
 
