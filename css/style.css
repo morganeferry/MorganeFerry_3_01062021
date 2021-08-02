@@ -64,28 +64,6 @@ body {
           animation-delay: 0.5s;
 }
 
-@-webkit-keyframes itemAppear {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes itemAppear {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 @-webkit-keyframes loader {
   100% {
     opacity: 0;
@@ -319,6 +297,15 @@ h3 {
           justify-content: space-between;
 }
 
+.description {
+  width: 80%;
+  white-space: nowrap;
+}
+
+.heart-section {
+  width: 20%;
+}
+
 .heart-section .icon--full {
   color: white;
 }
@@ -388,6 +375,11 @@ li {
   .restaurants {
     padding: 40px 80px;
   }
+  .position-heart {
+    position: relative;
+    left: 30px;
+    top: 10px;
+  }
   .h2_restaurants {
     margin-bottom: 30px;
   }
@@ -402,8 +394,8 @@ li {
     right: auto;
   }
   .fiche_grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     display: -ms-grid;
     display: grid;
     -webkit-column-gap: 40px;
@@ -562,6 +554,17 @@ li {
           animation-delay: .8s;
 }
 
+@-webkit-keyframes itemAppear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 @keyframes itemAppear {
   0% {
     -webkit-transform: scale(0);
@@ -636,8 +639,8 @@ h4 {
   .menu_responsive {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     -webkit-column-gap: 1rem;
             column-gap: 1rem;
   }
@@ -656,8 +659,8 @@ h4 {
   .menu_responsive {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     -webkit-column-gap: 1rem;
             column-gap: 1rem;
   }

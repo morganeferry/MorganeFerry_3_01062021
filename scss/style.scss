@@ -54,15 +54,7 @@ body{
     }
   }
 
-  @keyframes itemAppear {
-    0% {
-      transform: scale(0)
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
+
   @keyframes loader {
     100% {
       opacity: 0;
@@ -247,8 +239,15 @@ h3{
     justify-content: space-between;
 }
 
+.description{
+    width: 80%;
+    white-space: nowrap;
+}
+
 
 .heart-section{
+
+    width: 20%;
 
     .icon--full{
      color:white;
@@ -313,6 +312,8 @@ li{
 
 
 $breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
 @media (min-width: $breakpoint-tablet) {
 
     .explication{
@@ -321,6 +322,12 @@ $breakpoint-tablet: 768px;
 
     .restaurants{
         padding: 40px 80px;
+    }
+
+    .position-heart{
+        position: relative;
+        left: 30px;
+        top: 10px;
     }
 
     .h2_restaurants{
@@ -341,7 +348,7 @@ $breakpoint-tablet: 768px;
     }
 
     .fiche_grid{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr 1fr;
         display: grid;
         column-gap: 40px;
     }
@@ -359,7 +366,7 @@ $breakpoint-tablet: 768px;
     }
 }
 
-$breakpoint-desktop: 1024px;
+
 @media (min-width: $breakpoint-desktop) and (max-width: 1124px) {
 .fonctionnement{
     display: flex;
@@ -548,7 +555,7 @@ footer{
 @media (min-width: 1024px) and (max-width: 1439px){
     .menu_responsive{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: 1fr 1fr 1fr;
         column-gap: 1rem;
     }
 
@@ -568,7 +575,7 @@ footer{
 
     .menu_responsive{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: 1fr 1fr 1fr;
         column-gap: 1rem;
     }
 
